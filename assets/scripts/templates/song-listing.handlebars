@@ -1,0 +1,29 @@
+{{#each songs as |song|}}
+  {{log song}}
+  <section data-container-id="{{song._id}}">
+    <button data-id="{{song._id}}">
+      <h6>Title:</h6>
+      <h3>
+        {{limit song.title 15}}
+      </h3>
+      <h6>Album:</h6>
+      <p>
+        {{#if song.album}}
+        {{song.album}}
+        {{else}}
+        No album provided.
+        {{/if}}
+      </p>
+      <h6>Artist:</h6>
+      <p>
+        {{#if song.artist}}
+        {{song.artist}}
+        {{else}}
+        No artist provided.
+        {{/if}}
+      </p>
+      <button data-id="{{song._id}}" class="btn btn-danger delete-song">Remove</button>
+      <p class="text-info">The Song ID is: {{song._id}}</p>
+    </section>
+
+    {{/each}}
