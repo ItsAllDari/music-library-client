@@ -13,8 +13,9 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1><strong>Dynasty Music Library</strong></h1>
-      <h4><em>An application that keeps track of all of your favorite songs!</em></h4>
+      <br>
+      <br>
+      <h1><strong><em>Dive into the experience</strong></em></h1>
       <p id='message'></p>
       <section>
         <h3 class="show">Sign Up</h3>
@@ -60,6 +61,7 @@
       </section>
       <br>
       <nav>
+        <div class="app-name"><strong><em>Dynasty Music Library<img src="https://img.icons8.com/color/48/000000/international-music.png"/></em></strong></div>
         <div class="nav-buttons">
           <button id="getSongs" class="btn btn-info mr-2">Check Song Catalog</button>
           <br>
@@ -70,14 +72,14 @@
             <input required placeholder="Enter a new song title" type="text" name="song[title]">
             <input required placeholder="Enter the album name" type="text" name="song[album]">
             <input required placeholder="Enter the artist's name" type="text" name="song[artist]">
-          <button id="addSong" type="submit" class="btn btn-info mr-2">Add New Song</button>
+          <button id="addSong" type="submit" class="btn btn-info add-song">Add New Song</button>
         </form>
-        <form id="updateSongs">
+         <form id="updateSongs">
           <input type="text" name="song[id]" placeholder="Song ID Number" required>
           <input required placeholder="Enter the new song title" type="text" name="song[title]">
           <input required placeholder="Enter the new album name" type="text" name="song[album]">
           <input required placeholder="Enter the new artist name" type="text" name="song[artist]">
-          <button id="updateSong" type="submit" class="btn btn-info mr-2">Update Song Info</button>
+          <button id="updateSong" type="submit" class="btn btn-info update-song">Update Song Info</button>
         </form>
         </div>
       </nav>
