@@ -9,38 +9,49 @@ const getSongSuccess = (data) => {
   $('.content').append(showSongsHtml)
   $('#updateSongs').show()
   $('#clearSongs').show()
+  $('#sign-out').hide()
+  $('.hide').hide()
 }
 
-// const getSongFailure = () => {
-//   $('form').trigger('reset')
-//   $('#message').text('Could not display your library')
-//   $('#message').show().removeClass().addClass('failure')
-// }
+const getSongFailure = () => {
+  $('form').trigger('reset')
+  $('#message').text('Could not display your library')
+  $('#message').show().removeClass().addClass('failure')
+}
 
 const addSongSuccess = (data) => {
+  console.log(addSongSuccess)
+  $('form').trigger('reset')
   const showSongsHtml = showSongsTemplate({ songs: data.songs })
-  $('.content').append(showSongsHtml)
+  $('.content').empty(showSongsHtml)
+  $('#clearSongs').hide()
+  $('#getSongs').show()
 }
 
-// const addSongFailure = () => {
-//   $('form').trigger('reset')
-//   $('#message').text('Could not add song to your library, try again!')
-//   $('#message').show().removeClass().addClass('failure')
-// }
+const addSongFailure = () => {
+  $('form').trigger('reset')
+  $('.content').empty()
+  $('#message').text('Could not add song to your library, try again!')
+  $('#message').show().removeClass().addClass('failure')
+}
 
 const deleteSongSuccess = () => {
   $('.content').empty()
 }
-// const deleteSongFailure = () => {
-//   $('form').trigger('reset')
-//   $('#message').text('Could not delete this song, try again!')
-//   $('#message').show().removeClass().addClass('failure')
-// }
+
+const deleteSongFailure = () => {
+  $('form').trigger('reset')
+  $('#message').text('Could not delete this song, try again!')
+  $('#message').show().removeClass().addClass('failure')
+}
 
 const updateSongSuccess = (data) => {
-  console.log(data)
+  $('form').trigger('reset')
+  $('.content').empty()
   const showSongsHtml = showSongsTemplate({ songs: data.songs })
-  $('.content').detach(showSongsHtml)
+  $('.content').empty(showSongsHtml)
+  $('#clearSongs').hide()
+  $('#getSongs').show()
 }
 
 const updateSongFailure = () => {
@@ -52,6 +63,9 @@ const updateSongFailure = () => {
 const clearSongs = () => {
   $('.content').empty()
   $('#message').text('You have closed your music library')
+  $('#updateSongs').hide()
+  $('#sign-out').show()
+  $('.hide').show()
 }
 
 const clearSongFailure = () => {
@@ -64,9 +78,10 @@ module.exports = {
   getSongSuccess,
   addSongSuccess,
   updateSongSuccess,
-  // getSongFailure,
-  // addSongFailure,
+  getSongFailure,
+  addSongFailure,
   deleteSongSuccess,
+  deleteSongFailure,
   updateSongFailure,
   clearSongs,
   clearSongFailure
