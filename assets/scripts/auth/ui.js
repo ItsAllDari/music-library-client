@@ -22,6 +22,7 @@ const signInSuccess = function (data) {
   $('.show').hide()
   $('#getSongs').show()
   $('#addSongs').show()
+  $('h1').hide()
 }
 const signInFailure = function () {
   $('form').trigger('reset')
@@ -40,8 +41,8 @@ const signOutSuccess = function () {
   $('#getSongs').hide()
   $('#updateSongs').hide()
   $('#addSongs').hide()
-  $('.content').hide()
   $('#clearSongs').hide()
+  $('h1').show()
 }
 const signOutFailure = function () {
   $('form').trigger('reset')
