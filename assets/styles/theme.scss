@@ -1,0 +1,69 @@
+body {
+  background: lighten($info, 50%);
+  min-height: 100vh;
+  padding: 5rem 0 1rem;
+  background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v485-nunoon-49-musicnotesbackgroundicon_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=124e4b324fedceb9fe1e4e437ea892dc');
+  background-position: top;
+  font-family: 'Aldrich';
+}
+
+main {
+  @include make-container;
+  @include make-container-max-widths;
+
+  section {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+    background: $white;
+    border: 1px solid;
+    cursor: pointer;
+    margin: -1px;
+    outline: none;
+    padding: 1rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+  .content {
+      @include make-row;
+
+      &:empty {
+        &::before {
+          color: lighten($info, 25%);
+          content: 'Where Music Meets Fluidity';
+          font-size: 8vh;
+          line-height: .85;
+          text-align: center;
+          font-style: italic;
+          font-weight: lighter;
+          width: 100%;
+          color: white;
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1E90FF, 0 0 20px #1E90FF, 0 0 25px #1E90FF, 0 0 30px #1E90FF, 0 0 35px #1E90FF;
+        }
+      }
+    }
+  }
+
+  nav {
+  @extend .navbar;
+  @extend .navbar-light;
+  @extend .bg-dark;
+  @extend .fixed-top;
+
+  .app-name {
+    @extend .navbar-brand;
+    @extend .h1;
+    margin-bottom: 0;
+    font-family: 'Aldrich';
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1E90FF, 0 0 20px #1E90FF, 0 0 25px #1E90FF, 0 0 30px #1E90FF, 0 0 35px #1E90FF;
+  }
+}
