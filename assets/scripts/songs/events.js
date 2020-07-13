@@ -8,19 +8,19 @@ const onGetSongs = (event) => {
   event.preventDefault()
   api.getSongs()
     .then(ui.getSongSuccess)
-    .catch(ui.failure)
+    .catch(ui.getSongFailure)
   $('#getSongs').hide()
   $('#message').text('Here are the songs currently within your music library')
 }
 
 const onAddSongs = (event) => {
   event.preventDefault()
+  $('#message').text('New song added!')
   const form = event.target
   const formData = getFormFields(form)
   api.addSongs(formData)
     .then(ui.addSongSuccess)
     .catch(ui.failure)
-  $('#message').text('New song added!')
 }
 
 const onDeleteSongs = (event) => {
@@ -28,17 +28,17 @@ const onDeleteSongs = (event) => {
   const songId = $(event.target).closest('section').data('container-id')
   api.deleteSongs(songId)
     .then(ui.deleteSongSuccess)
-    .catch(ui.failure)
+    .catch(ui.deleteSongFailure)
   $('#message').html('Your song has been deleted!')
 }
 
 const onUpdateSongs = (event) => {
   event.preventDefault()
   const form = event.target
-  const data = getFormFields(form)
-  api.updateSongs(data)
+  const formData = getFormFields(form)
+  api.updateSongs(formData)
     .then(ui.updateSongSuccess)
-    .catch(ui.failure)
+    .catch(ui.updateSongFailure)
   $('#message').text('The song has been successfully updated')
 }
 
@@ -51,9 +51,9 @@ const onClearSongs = (event) => {
 
 const addHandlers = () => {
   $('#getSongs').on('click', onGetSongs)
-  $('#addSong').on('submit', onAddSongs)
+  $('#addSongs').on('submit', onAddSongs)
   $('.content').on('click', '.delete-song', onDeleteSongs)
-  $('#updateSong').on('submit', onUpdateSongs)
+  $('#updateSongs').on('submit', onUpdateSongs)
   $('#clearSongs').on('click', onClearSongs)
 }
 
