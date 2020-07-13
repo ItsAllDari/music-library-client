@@ -2,7 +2,7 @@
 const store = require('../store')
 const config = require('../config')
 
-const getSongs = function () {
+const getSongs = () => {
   return $.ajax({
     method: 'GET',
     url: config.apiUrl + '/songs',
@@ -17,7 +17,8 @@ const getSongs = function () {
   })
 }
 
-const addSongs = function (formData) {
+const addSongs = (formData) => {
+  console.log(formData)
   return $.ajax({
     url: config.apiUrl + '/songs',
     method: 'POST',
@@ -34,7 +35,7 @@ const addSongs = function (formData) {
   })
 }
 
-const deleteSongs = function (songId) {
+const deleteSongs = (songId) => {
   return $.ajax({
     url: config.apiUrl + '/songs/' + songId,
     method: 'DELETE',
@@ -44,19 +45,19 @@ const deleteSongs = function (songId) {
   })
 }
 
-const updateSongs = function (data) {
+const updateSongs = (formData) => {
   return $.ajax({
-    url: config.apiUrl + '/songs/' + data.song.id,
+    url: config.apiUrl + '/songs/' + formData.song.id,
     method: 'PATCH',
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
     data: {
       song: {
-        _id: data.song.id,
-        title: data.song.title,
-        album: data.song.album,
-        artist: data.song.artist
+        _id: formData.song.id,
+        title: formData.song.title,
+        album: formData.song.album,
+        artist: formData.song.artist
       }
     }
   })
