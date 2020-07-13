@@ -1,10 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+@import 'theme';
 
-body {
-  background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v485-nunoon-49-musicnotesbackgroundicon_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=124e4b324fedceb9fe1e4e437ea892dc');
-  background-position: top;
-  font-family: 'Aldrich';
-}
+// body {
+//   background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v485-nunoon-49-musicnotesbackgroundicon_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=124e4b324fedceb9fe1e4e437ea892dc');
+//   background-position: top;
+//   font-family: 'Aldrich';
+// }
 
 h1 {
   text-align: center;
@@ -12,8 +13,9 @@ h1 {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1E90FF, 0 0 20px #1E90FF, 0 0 25px #1E90FF, 0 0 30px #1E90FF, 0 0 35px #1E90FF;
 }
 
-h4 {
+h2 {
   text-align: center;
+  margin-top: auto;
   color: white;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1E90FF, 0 0 20px #1E90FF, 0 0 25px #1E90FF, 0 0 30px #1E90FF, 0 0 35px #1E90FF;
 }
@@ -31,6 +33,10 @@ form {
 
 .success {
   text-align: center;
+  flex: auto;
+  padding: 10px;
+  margin-top: 50px;
+  position: relative;
   color: white;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1E90FF, 0 0 20px #1E90FF, 0 0 25px #1E90FF, 0 0 30px #1E90FF, 0 0 35px #1E90FF;
 }
