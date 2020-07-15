@@ -14,7 +14,7 @@ const newFailure = function () {
 
 const signInSuccess = function (data) {
   $('form').trigger('reset')
-  $('#message').text("You've signed in! Check out your song catalog below")
+  $('#message').text("You've signed in! Be sure to check out the song catalog")
   $('#message').show().removeClass().addClass('success')
   store.user = data.user
   $('.hide').show()
