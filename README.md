@@ -14,7 +14,9 @@
 
 <h3>Wireframe</h3>
 <img src"https://user-images.githubusercontent.com/58965588/87498617-35175580-c626-11ea-8ba4-1d62d06b059d.png" alt="Authentication Page"/>
+<p>https://user-images.githubusercontent.com/58965588/87498617-35175580-c626-11ea-8ba4-1d62d06b059d.png</p>
 <img src"https://user-images.githubusercontent.com/58965588/87497878-7870c480-c624-11ea-80c0-23bd6b6d57cf.png" alt="Library"/>
+<p>https://user-images.githubusercontent.com/58965588/87497878-7870c480-c624-11ea-80c0-23bd6b6d57cf.png</p>
 
 <h3>User Stories</h3>
 <ul>
