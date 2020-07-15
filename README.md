@@ -1,4 +1,4 @@
-h1><strong>Music Library Application</strong></h1>
+<h1><strong>Music Library Application</strong></h1>
 <h2>A full stack application for users to keep track of their music library</h2>
 <p>This application is made for music lovers who just want to add a list of some of their favorite songs for memory's sake</p>
 
