@@ -18,7 +18,6 @@ const getSongs = () => {
 }
 
 const addSongs = (formData) => {
-  console.log(formData)
   return $.ajax({
     url: config.apiUrl + '/songs',
     method: 'POST',
