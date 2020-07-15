@@ -4,7 +4,6 @@
 const showSongsTemplate = require('../templates/song-listing.handlebars')
 
 const getSongSuccess = (data) => {
-  console.log(data)
   const showSongsHtml = showSongsTemplate({ songs: data.songs })
   $('.content').append(showSongsHtml)
   $('#updateSongs').show()
@@ -20,7 +19,6 @@ const getSongFailure = () => {
 }
 
 const addSongSuccess = (data) => {
-  console.log(addSongSuccess)
   $('form').trigger('reset')
   const showSongsHtml = showSongsTemplate({ songs: data.songs })
   $('.content').empty(showSongsHtml)
