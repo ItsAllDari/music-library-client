@@ -24,7 +24,7 @@
             <input required placeholder="Enter your e-mail" type="text" name="credentials[email]">
             <input placeholder="Enter your password" type="text" name="credentials[password]">
             <input placeholder="Re-enter password" type="text" name="credentials[password_confirmation]">
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-primary btn-md">Submit</button>
           </form>
         </div>
       </section>
@@ -35,16 +35,7 @@
         <form id="sign-in">
           <input required placeholder="Enter your e-mail" type="text" name="credentials[email]">
           <input placeholder="Enter your password" type="text" name="credentials[password]">
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-      </section>
-      <br>
-      <section>
-        <h3 class="hide">Sign Out</h3>
-        <div class="sign-out">
-        <form id="sign-out">
-          <button type="submit">Sign Out</button>
+          <button type="submit" class="btn btn-secondary btn-md">Submit</button>
         </form>
       </div>
       </section>
@@ -55,31 +46,39 @@
           <form id="change-password">
             <input placeholder="Old Password" type="text" name="passwords[old]">
             <input placeholder="New Password" type="text" name="passwords[new]">
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-warning btn-md">Submit</button>
           </form>
         </div>
       </section>
       <br>
+      <section>
+        <div class="sign-out">
+        <form id="sign-out">
+          <button type="submit" class="btn btn-danger btn-md">Sign Out</button>
+        </form>
+      </div>
+      </section>
+      <br>
       <nav>
-        <div class="app-name"><strong><em>Dynasty Music Library<img src="https://img.icons8.com/color/48/000000/international-music.png"/></em></strong></div>
+        <div class="app-name"><strong><em>Dynasty Music Library<img src="https://img.icons8.com/color/48/000000/international-music.png" alt="Music App Icon"/></em></strong></div>
         <div class="nav-buttons">
-          <button id="getSongs" class="btn btn-info mr-2">Check Song Catalog</button>
+          <button id="getSongs" class="btn btn-light btn-block check-song">Check Song Catalog</button>
           <br>
           <br>
-          <button id="clearSongs" class="btn btn-outline-info">Close Library</button>
+          <button id="clearSongs" class="btn btn-outline-light btn-block">Close Library</button>
           <br>
           <form id="addSongs">
             <input required placeholder="Enter a new song title" type="text" name="song[title]">
             <input required placeholder="Enter the album name" type="text" name="song[album]">
             <input required placeholder="Enter the artist's name" type="text" name="song[artist]">
-          <button id="addSong" type="submit" class="btn btn-info add-song">Add New Song</button>
+          <button id="addSong" type="submit" class="btn btn-light btn-sm add-song">Add New Song</button>
         </form>
          <form id="updateSongs">
           <input type="text" name="song[id]" placeholder="Song ID Number" required>
           <input required placeholder="Enter the new song title" type="text" name="song[title]">
           <input required placeholder="Enter the new album name" type="text" name="song[album]">
           <input required placeholder="Enter the new artist name" type="text" name="song[artist]">
-          <button id="updateSong" type="submit" class="btn btn-info update-song">Update Song Info</button>
+          <button id="updateSong" type="submit" class="btn btn-light btn-sm update-song">Update Song Info</button>
         </form>
         </div>
       </nav>
