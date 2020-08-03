@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+      <title>Music Library</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <br>
+      <br>
+      <h1><strong><em>Dive into the experience</strong></em></h1>
+      <p id='message'></p>
+      <section>
+        <h3 class="show">Sign Up</h3>
+        <div class="show">
+          <form id="sign-up">
+            <input required placeholder="Enter your e-mail" type="text" name="credentials[email]">
+            <input placeholder="Enter your password" type="text" name="credentials[password]">
+            <input placeholder="Re-enter password" type="text" name="credentials[password_confirmation]">
+            <button type="submit" class="btn btn-primary btn-md">Submit</button>
+          </form>
+        </div>
+      </section>
+      <br>
+      <section>
+        <h3 class="show">Sign In</h3>
+        <div class="show">
+        <form id="sign-in">
+          <input required placeholder="Enter your e-mail" type="text" name="credentials[email]">
+          <input placeholder="Enter your password" type="text" name="credentials[password]">
+          <button type="submit" class="btn btn-secondary btn-md">Submit</button>
+        </form>
+      </div>
+      </section>
+      <br>
+      <section>
+        <h3 class="hide">Change Password</h3>
+        <div class="hide">
+          <form id="change-password">
+            <input placeholder="Old Password" type="text" name="passwords[old]">
+            <input placeholder="New Password" type="text" name="passwords[new]">
+            <button type="submit" class="btn btn-warning btn-md">Submit</button>
+          </form>
+        </div>
+      </section>
+      <br>
+      <section>
+        <div class="sign-out">
+        <form id="sign-out">
+          <button type="submit" class="btn btn-danger btn-md">Sign Out</button>
+        </form>
+      </div>
+      </section>
+      <br>
+      <nav>
+        <div class="app-name"><strong><em>Dynasty Music Library<img src="https://img.icons8.com/color/48/000000/international-music.png" alt="Music App Icon"/></em></strong></div>
+        <div class="nav-buttons">
+          <button id="getSongs" class="btn btn-light btn-block check-song">Check Song Catalog</button>
+          <br>
+          <br>
+          <button id="clearSongs" class="btn btn-outline-light btn-block">Close Library</button>
+          <br>
+          <form id="addSongs">
+            <input required placeholder="Enter a new song title" type="text" name="song[title]">
+            <input required placeholder="Enter the album name" type="text" name="song[album]">
+            <input required placeholder="Enter the artist's name" type="text" name="song[artist]">
+          <button id="addSong" type="submit" class="btn btn-light btn-sm add-song">Add New Song</button>
+        </form>
+        <form id="addReviews">
+          <input type="text" name="song[id]" placeholder="Song ID Number" required>
+          <input required placeholder="Enter your review" type="text" name="review[note]">
+          <input placeholder="Rating (out of 10)" type="text" name="review[rating]">
+          <button id="addReview" type="submit" class="btn btn-light btn-sm add-review">Add Review</button>
+        </form>
+         <form id="updateSongs">
+          <input type="text" name="song[id]" placeholder="Song ID Number" required>
+          <input required placeholder="Enter the new song title" type="text" name="song[title]">
+          <input required placeholder="Enter the new album name" type="text" name="song[album]">
+          <input required placeholder="Enter the new artist name" type="text" name="song[artist]">
+          <button id="updateSong" type="submit" class="btn btn-light btn-sm update-song">Update Song Info</button>
+        </form>
+        </div>
+      </nav>
+      <br>
+      <main>
+        <div id="content" class="content"></div>
+      </main>
+    </body>
+</html>
