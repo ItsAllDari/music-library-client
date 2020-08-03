@@ -1,19 +1,16 @@
 'use strict'
 
-// const onSignInSuccess = require('../auth/ui')
 const showSongsTemplate = require('../templates/song-listing.handlebars')
 
-const getReviewSuccess = (data) => {
-  const showSongsHtml = showSongsTemplate({ songs: data.songs })
-  const showReviewsHtml = showSongsTemplate({ reviews: data.songs.reviews })
-  $('.content').append(showSongsHtml)
-  $('.content').append(showReviewsHtml)
-}
-
-const getReviewFailure = () => {
-  $('form').trigger('reset')
-  $('#message').text('Could not display reviews')
-}
+// const deleteReviewSuccess = () => {
+//   $('.content').empty()
+// }
+//
+// const deleteReviewFailure = () => {
+//   $('form').trigger('reset')
+//   $('#message').text('Could not delete review')
+//   $('#message').show().removeClass().addClass('failure')
+// }
 
 const addReviewSuccess = (data) => {
   $('.form').trigger('reset')
@@ -31,8 +28,8 @@ const addReviewFailure = () => {
 }
 
 module.exports = {
-  getReviewSuccess,
-  getReviewFailure,
+  // deleteReviewSuccess,
+  // deleteReviewFailure,
   addReviewSuccess,
   addReviewFailure
 }

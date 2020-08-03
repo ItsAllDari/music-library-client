@@ -1,6 +1,5 @@
 'use strict'
 
-// const onSignInSuccess = require('../auth/ui')
 const showSongsTemplate = require('../templates/song-listing.handlebars')
 
 const getSongSuccess = (data) => {

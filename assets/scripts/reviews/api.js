@@ -2,17 +2,12 @@
 const store = require('../store')
 const config = require('../config')
 
-// const getReviews = (formData) => {
+// const deleteReview = (songId, reviewId) => {
 //   return $.ajax({
-//     method: 'GET',
-//     url: config.apiUrl + '/songs/' + formData.song.id + '/reviews',
+//     method: 'DELETE',
+//     url: config.apiUrl + '/songs/' + songId + '/reviews' + reviewId,
 //     headers: {
 //       Authorization: 'Bearer ' + store.user.token
-//     },
-//     data: {
-//       review: {
-//         owner: store.user.id
-//       }
 //     }
 //   })
 // }
@@ -34,6 +29,6 @@ const addReview = (formData) => {
 }
 
 module.exports = {
-  // getReviews,
+  // deleteReview,
   addReview
 }

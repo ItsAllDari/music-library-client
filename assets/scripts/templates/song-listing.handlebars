@@ -1,8 +1,8 @@
 {{#each songs as |song|}}
   {{log song.reviews}}
   {{log song}}
-  <section data-container-id="{{song._id}}">
-    <button data-id="{{song._id}}">
+  <section class="items" data-container-id="{{song._id}}">
+    <button class="btn btn-success" data-id="{{song._id}}">
       <h6>Title:</h6>
       <h3>
         {{limit song.title 15}}
@@ -26,7 +26,7 @@
       <button data-id="{{song._id}}" class="btn btn-danger delete-song">Remove</button>
       <p class="text-info">The Song ID is: {{song._id}}</p>
     {{#each reviews as |review|}}
-    <button data-id="{{song._id.review}}">
+    <button class="btn btn-success btn-sm" data-id="{{review._id}}">
       <h6>Review:</h6>
       <h3>
         {{review.note}}
@@ -39,7 +39,7 @@
         No rating provided.
         {{/if}}
       </p>
-      <button data-id="{{song._id.review}}" class="btn btn-danger delete-review">Delete</button>
+      <!-- <button data-id="{{song._id.review}}" class="btn btn-danger delete-review">Delete</button> -->
     {{/each}}
     </section>
 
