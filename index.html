@@ -73,6 +73,12 @@
             <input required placeholder="Enter the artist's name" type="text" name="song[artist]">
           <button id="addSong" type="submit" class="btn btn-light btn-sm add-song">Add New Song</button>
         </form>
+        <form id="addReviews">
+          <input type="text" name="song[id]" placeholder="Song ID Number" required>
+          <input required placeholder="Enter your review" type="text" name="review[note]">
+          <input placeholder="Rating (out of 10)" type="text" name="review[rating]">
+          <button id="addReview" type="submit" class="btn btn-light btn-sm add-review">Add Review</button>
+        </form>
          <form id="updateSongs">
           <input type="text" name="song[id]" placeholder="Song ID Number" required>
           <input required placeholder="Enter the new song title" type="text" name="song[title]">

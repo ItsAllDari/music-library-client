@@ -12,6 +12,9 @@ const getSongs = () => {
     data: {
       song: {
         owner: store.user.id
+      },
+      reviews: {
+        owner: store.user.id
       }
     }
   })

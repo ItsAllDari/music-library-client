@@ -7,6 +7,7 @@
 // require('./example')
 const authEvents = require('./auth/events')
 const songEvents = require('./songs/events')
+const reviewEvents = require('./reviews/events')
 
 $(() => {
   // your JS code goes here
@@ -20,5 +21,8 @@ $(() => {
   $('#addSongs').hide()
   $('#updateSongs').hide()
   $('#clearSongs').hide()
+  $('#addReviews').hide()
+  $('#addReview').hide()
   songEvents.addHandlers()
+  reviewEvents.addHandlers()
 })

@@ -43,6 +43,8 @@ const signOutSuccess = function () {
   $('#addSongs').hide()
   $('#clearSongs').hide()
   $('h1').show()
+  $('#addReview').hide()
+  $('#addReviews').hide()
 }
 const signOutFailure = function () {
   $('form').trigger('reset')

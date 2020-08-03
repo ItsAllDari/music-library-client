@@ -10,6 +10,8 @@ const getSongSuccess = (data) => {
   $('#clearSongs').show()
   $('#sign-out').hide()
   $('.hide').hide()
+  $('#addReview').show()
+  $('#addReviews').show()
 }
 
 const getSongFailure = () => {
