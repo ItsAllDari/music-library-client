@@ -14,19 +14,22 @@
 <p>I plan to follow a step by step process in order to successfully complete the project. I would like to begin with the back-end API set up and then move toward the user facing front end processes. There should be models for each user to have their own songs that should be specific to them. The user should be able to successfully add songs, see what is inside of their collection and also delete any songs they no longer enjoy.</p>
 
 <h3>Wireframe</h3>
-<img src"https://user-images.githubusercontent.com/58965588/87498617-35175580-c626-11ea-8ba4-1d62d06b059d.png" alt="Authentication Page"/>
-<p>https://user-images.githubusercontent.com/58965588/87498617-35175580-c626-11ea-8ba4-1d62d06b059d.png</p>
-<img src"https://user-images.githubusercontent.com/58965588/87497878-7870c480-c624-11ea-80c0-23bd6b6d57cf.png" alt="Library"/>
-<p>https://user-images.githubusercontent.com/58965588/87497878-7870c480-c624-11ea-80c0-23bd6b6d57cf.png</p>
+<p>Authentication Page</p>
+
+![Screen Shot 2020-09-02 at 8 36 17 AM](https://user-images.githubusercontent.com/58965588/91981835-65f73b00-ecf7-11ea-8f77-99b0fa023cd1.png)
+
+<p>Library</p>
+
+![Screen Shot 2020-09-02 at 8 37 27 AM](https://user-images.githubusercontent.com/58965588/91981960-8fb06200-ecf7-11ea-9f0f-5d0483f9c874.png)
 
 <h3>User Stories</h3>
 <ul>
-<li>As a user I would like to access my library to see which songs it contains</li>
-<li>As a user I should be able to sign in to see my collection</li>
-<li>As a user I should be able to sign out and change my password once signed in</li>
-<li>As a user I should be able to delete songs that I have added with my account</li>
-<li>As a user I should be able to update song information that I have added with my account</li>
-<li>As a user I should be able to close the library upon command</li>
+<li>As a user, I would like to access my library to see which songs it contains</li>
+<li>As a user, I should be able to sign in to see my collection</li>
+<li>As a user, I should be able to sign out and change my password once signed in</li>
+<li>As a user, I should be able to delete songs that I have added with my account</li>
+<li>As a user, I should be able to update song information that I have added with my account</li>
+<li>As a user, I should be able to close the library upon command</li>
 </ul>
 
 <h3>Technologies Used</h3>
