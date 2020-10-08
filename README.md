@@ -11,7 +11,7 @@
 <a href="https://github.com/ItsAllDari/music-library">GitHub Back End</a>
 <p>The back end client is for the front end to receive the routes and models for the application to run smoothly</p>
 
-<h3>Planning for the game</h3>
+<h3>Planning for the application</h3>
 <p>I plan to follow a step by step process in order to successfully complete the project. I would like to begin with the back-end API set up and then move toward the user facing front end processes. There should be models for each user to have their own songs that should be specific to them. The user should be able to successfully add songs, see what is inside of their collection and also delete any songs they no longer enjoy.</p>
 
 <h3>Wireframe</h3>
