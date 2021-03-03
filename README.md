@@ -12,7 +12,7 @@
 <p>The back end client is for the front end to receive the routes and models for the application to run smoothly</p>
 
 <h3>Planning for the application</h3>
-<p>I plan to follow a step by step process in order to successfully complete the project. I would like to begin with the back-end API set up and then move toward the user facing front end processes. There should be models for each user to have their own songs that should be specific to them. The user should be able to successfully add songs, see what is inside of their collection and also delete any songs they no longer enjoy.</p>
+<p>I plan to follow a step by step process in order to successfully complete the project. I would like to begin with the back-end API set up and then move toward the user facing front end processes. With the use of wireframes there was a solid understanding of how the application should look like upon completion. There should be models for each user to have their own songs that should be specific to them. The user should be able to successfully add songs, see what is inside of their collection and also delete any songs they no longer enjoy. After successfully completing the first launch of the application, the ability to add reviews to each song was also implemented.</p>
 
 <h3>Wireframe</h3>
 <p>Authentication Page</p>
@@ -46,7 +46,7 @@
 
 <h3>Features in future iterations</h3>
 <ul>
-<p>I would like to add a delete button feature for the reviews along with maybe added the date that they were created. Would also love to add a lot more styling to the page.</p>
+<p>I would like to add a delete button feature for the reviews along with maybe adding the date that they were created. Would also love to add more styling to the page.</p>
 </ul>
 </html>
 </body>
